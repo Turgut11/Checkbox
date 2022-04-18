@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("mountain3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    -webkit-appearance: none;
+    background-color: #fff;
+    border: 5px solid rgb(36, 33, 33);
+    background-color: rgb(155, 148, 148);
+}
+
+input:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(0deg,#333, #000);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+input:checked::before{
+    content: "";
+    left: 70px;
+}
+
+input:checked{
+    background-color: rgb(8, 190, 84);
+}
